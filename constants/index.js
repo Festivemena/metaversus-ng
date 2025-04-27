@@ -27,9 +27,11 @@ export const exploreWorlds = [
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'A tutor or teacher who wants students to stay engaged.',
+  'A coach or mentor ready to inspire with clarity.',
+  'An event host or team lead who wants to hold attention.',
+'A business owner who wants to speak persuasively.',
+'A student or content creator eager to grow in confidence.',
 ];
 
 export const newFeatures = [
