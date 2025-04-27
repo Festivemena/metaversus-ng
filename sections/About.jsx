@@ -22,7 +22,9 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">An Intensive Public Speaking Experience for Communicators Who Want to Stand Out{' '}
+        <span className="font-extrabold text-white">
+          An Intensive Public Speaking Experience for Communicators Who Want to Stand Out
+        </span>
       </motion.p>
 
       <motion.img
