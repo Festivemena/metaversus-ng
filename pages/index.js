@@ -73,43 +73,31 @@ export default function Home() {
     <>
       <Head>
         <title>Sweet Like Honey – Public Speaking Training</title>
-        <meta
-          name="description"
-          content="Transform your voice into a powerful tool. Join Sweet Like Honey, a 5-week online public speaking program for communicators who want to stand out."
-        />
-        <meta
-          name="keywords"
-          content="Public Speaking, Online Training, Kaizen, Communication Skills, Speaking with Confidence"
-        />
-        <meta name="author" content="Kaizen Consultancy and Educational Services" />
+        <meta name="description" content="Public speaking experience for educators, leaders, creators and communicators." />
       </Head>
 
-      <main className="bg-yellow-50 text-gray-800 font-sans">
+      <main className="bg-soft text-dark font-sans">
         {/* HERO */}
-        <section className="text-center py-12 px-6 max-w-5xl mx-auto">
-          <Image src="/planet-03.png" alt="Sweet Like Honey" width={80} height={80} className="mx-auto mb-4" />
-          <h1 className="text-5xl font-extrabold text-yellow-600 drop-shadow">Sweet Like Honey</h1>
-          <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+        <section className="bg-honey text-white text-center py-16 px-6">
+          <h1 className="text-5xl font-extrabold drop-shadow-sm">Sweet Like Honey</h1>
+          <p className="mt-4 text-xl max-w-xl mx-auto">
             An Intensive Public Speaking Experience for Communicators Who Want to Stand Out.
           </p>
-          <a
-            href="#register"
-            className="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded shadow"
-          >
+          <a href="#register" className="mt-6 inline-block bg-white text-honey font-bold py-3 px-6 rounded shadow hover:bg-yellow-100 transition">
             Claim Early Bird Offer
           </a>
         </section>
 
         {/* COUNTDOWN */}
-        <section className="text-center py-6">
+        <section className="bg-white text-center py-6">
           <p className="text-lg font-semibold text-red-600">
             Early Bird Ends In: {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
           </p>
         </section>
 
-        {/* WHO IT IS FOR */}
-        <section className="py-12 bg-white px-6 max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">This Program is Perfect For You If You Are:</h2>
+        {/* WHO IT'S FOR */}
+        <section className="py-12 px-6 text-center max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6">Who It's For</h2>
           <ul className="text-left list-disc list-inside text-lg space-y-2">
             {whoIsItFor.map((item, i) => (
               <li key={i}>{item}</li>
@@ -118,7 +106,7 @@ export default function Home() {
         </section>
 
         {/* BENEFITS */}
-        <section className="py-12 px-6 bg-yellow-100 text-center max-w-4xl mx-auto">
+        <section className="py-12 px-6 bg-yellow-50 text-center max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">What You’ll Gain</h2>
           <ul className="text-left list-disc list-inside text-lg space-y-2">
             {benefits.map((item, i) => (
@@ -128,40 +116,35 @@ export default function Home() {
         </section>
 
         {/* PRICING */}
-        <section id="register" className="py-12 bg-white px-6 text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Enrollment Options</h2>
-          <p className="text-xl font-semibold text-green-600 mb-2">
-            Early Bird: ₦20,000 <span className="text-sm">(Limited Slots)</span>
-          </p>
-          <p className="text-lg text-gray-700 mb-6">Regular: ₦25,000</p>
-          <a
-            href="https://selar.co/your-payment-link"
-            className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded"
-          >
+        <section id="register" className="py-12 px-6 bg-white text-center max-w-3xl mx-auto rounded-lg shadow-md">
+          <h2 className="text-3xl font-bold mb-4">Pricing</h2>
+          <p className="text-2xl font-bold text-green-600 mb-2">₦20,000 <span className="text-base text-gray-500">(Early Bird)</span></p>
+          <p className="text-lg text-gray-600 mb-4">₦25,000 Regular</p>
+          <a href="https://selar.co/your-payment-link" className="inline-block bg-honey text-white font-bold py-3 px-6 rounded hover:bg-yellow-600 transition">
             Secure My Spot
           </a>
-          <p className="text-sm mt-4 text-gray-500">Note: Early bird closes 25th June</p>
+          <p className="text-sm mt-3 text-gray-500">Note: Early bird closes 25th June</p>
         </section>
 
         {/* FAQ */}
-        <section className="py-12 bg-yellow-50 px-6 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+        <section className="py-12 px-6 bg-soft max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-6">FAQs</h2>
           <div className="space-y-6 text-left">
             {faqs.map((faq, i) => (
-              <div key={i}>
-                <p className="font-semibold text-gray-800">{faq.q}</p>
-                <p className="text-gray-600">{faq.a}</p>
+              <div key={i} className="bg-white p-4 rounded shadow">
+                <p className="font-semibold">{faq.q}</p>
+                <p className="text-gray-700">{faq.a}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* CTA */}
-        <section className="py-12 bg-orange-500 text-white text-center px-6">
+        <section className="py-12 bg-honey text-white text-center px-6">
           <h2 className="text-3xl font-bold mb-4">Ready to Speak So People Listen?</h2>
           <a
             href="https://selar.co/your-payment-link"
-            className="inline-block mt-4 bg-white text-orange-600 font-bold py-3 px-6 rounded hover:bg-gray-100"
+            className="inline-block mt-4 bg-white text-honey font-bold py-3 px-6 rounded hover:bg-yellow-100"
           >
             Join Sweet Like Honey
           </a>
