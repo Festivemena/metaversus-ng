@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         'primary-black': '#1A232E',
         'secondary-white': '#c7c7c7',
+      honey: '#FDBA2D',
+      soft: '#FFF7ED',
+      dark: '#1F2937'
       },
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
