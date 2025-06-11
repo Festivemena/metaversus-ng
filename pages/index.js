@@ -87,7 +87,7 @@ export default function Home() {
       <main className="bg-yellow-50 text-gray-800 font-sans">
         {/* HERO */}
         <section className="text-center py-12 px-6 max-w-5xl mx-auto">
-          <Image src="/images/honey-bg.png" alt="Sweet Like Honey" width={80} height={80} className="mx-auto mb-4" />
+          <Image src="/planet-03.png" alt="Sweet Like Honey" width={80} height={80} className="mx-auto mb-4" />
           <h1 className="text-5xl font-extrabold text-yellow-600 drop-shadow">Sweet Like Honey</h1>
           <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
             An Intensive Public Speaking Experience for Communicators Who Want to Stand Out.
